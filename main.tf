@@ -25,4 +25,7 @@ provider "aws" {
 
 module "vpc" {
   source = "./modules/vpc"
+  vpc-1-cidr = var.vpc-1-cidr
+  vpc-dnsSupport = true
+  vpc-dnsHostNames = true
 }
