@@ -22,3 +22,7 @@ provider "aws" {
     role_arn    = "arn:aws:iam::${var.account_id}:role/TerraformServicesAdminAccess"
   }
 }
+
+module "vpc" {
+  source = "./modules/vpc"
+}
